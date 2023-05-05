@@ -39,3 +39,7 @@ http://localhost:3000
 ## SITE LINK
 
 https://softito-web-one.vercel.app/
+
+## GITHUB LINK
+
+https://github.com/AhmetEnesKCC/softito-web-one
