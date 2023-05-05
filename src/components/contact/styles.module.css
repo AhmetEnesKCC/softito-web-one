@@ -1,0 +1,23 @@
+.wrapper {
+  @apply flex flex-col py-10;
+}
+
+.title {
+  @apply text-mainPink font-bold text-xl;
+}
+
+.contact {
+  @apply flex items-center space-x-4  mt-5 border-[0.2px] border-opacity-10 border-[#212121] w-[400px] py-2 px-1;
+}
+
+.contact .icon {
+  @apply! w-[80px];
+}
+
+.contact .label {
+  @apply w-[200px];
+}
+
+.contact .value {
+  @apply w-[200px];
+}

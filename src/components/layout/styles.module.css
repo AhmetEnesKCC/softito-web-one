@@ -1,0 +1,57 @@
+.header {
+  @apply bg-white w-full shadow-md px-2 py-4 rounded-md mt-4 sticky top-3 flex justify-between flex-nowrap;
+}
+
+.buttons {
+  @apply flex gap-2;
+}
+
+@media (max-width: 800px) {
+  .header {
+    @apply flex flex-col !flex-wrap px-4;
+  }
+  .buttons {
+    @apply flex-col;
+  }
+  .header .right {
+    @apply !grid !grid-cols-2;
+  }
+}
+
+.header .right {
+  @apply flex gap-x-4;
+}
+
+.link {
+  @apply text-mainPink font-bold capitalize hover:bg-mainYellow px-2 py-1 rounded-md;
+}
+
+.login,
+.signup {
+  @apply px-2 py-1 rounded-sm gap-x-2 hover:bg-green-400 hover:!text-white;
+}
+
+.login {
+  @apply flex items-center border-green-600 border-[1px] text-green-600;
+}
+
+.signup {
+  @apply text-white bg-green-600;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+    scale: 0.8;
+    rotate: 0;
+  }
+  100% {
+    opacity: 1;
+    rotate: 360deg;
+    scale: 1;
+  }
+}
+
+.loading {
+  animation: loading 0.83s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+}
